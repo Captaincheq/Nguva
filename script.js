@@ -27,9 +27,10 @@ function updateTime() {
     zeroPadding(cd.getMinutes(), 2) +
     ":" +
     zeroPadding(cd.getSeconds(), 2)
-     +
-    ":" +
-    zeroPadding(cd.getMilliseconds(), 3);
+    // +
+    //":" +
+    //zeroPadding(cd.getMilliseconds(), 3)
+    ;
 
   clock.date =
     zeroPadding(cd.getDate(), 2) +
