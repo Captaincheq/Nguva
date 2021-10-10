@@ -14,6 +14,7 @@
 
     .item2 {
       grid-area: Area2;
+      padding: 10px;
     }
 
     .item3 {
@@ -47,10 +48,9 @@
     .grid-container {
       display: grid;
       grid-template-areas:
-        "Area1 Area1 Area9"
-        "Area1 Area1 Area5"
-        "Area2 Area4 Area7"
-        "Area6 Area8 Area3";
+        "Area1 "
+        "Area2 "
+        "Area3 ";
     }
 
     .grid-container>div {
@@ -112,15 +112,15 @@
         <div class="bar10"></div>
       </div>
     </div>
+
+
     <div class="item2">
-      <a href="https://github.com/sierra007117"><img
-          src="https://github-readme-stats.vercel.app/api?username=Captaincheq&count_private=true&show_icons=true&theme=react&include_all_commits=yes" /></a>
-    </div>
-    <div class="item4">
-      <a href="https://github.com/sierra007117"><img
-          src="https://github-readme-stats.vercel.app/api?username=sierra007117&count_private=true&show_icons=true&theme=monokai&include_all_commits=yes" /></a>
-    </div>
-    
+      <a class="weatherwidget-io" href="https://forecast7.com/en/39d96116d30/haidian/" data-label_1="USTB" data-label_2="DORM 4" data-theme="original" >USTB DORM 4</a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    </div> 
+
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
   <script src="./script.js"></script>
