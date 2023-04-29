@@ -6,6 +6,7 @@ body {
 body {
   background: rgb(2, 2, 46);
   background-size: 100%;
+  align-items: center;
 }
 
 p {
@@ -13,9 +14,32 @@ p {
   padding: 0;
 }
 
-h1 {
+h1, h3 {
   color: white;
   font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.item1 {
+  grid-area: Area1;
+}
+
+.item2 {
+  grid-area: Area2;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "Area1 "
+    "Area2 "
+    "Area3 ";
+}
+
+.grid-container>div {
+  text-align: center;
 }
 
 #clock {
@@ -110,10 +134,18 @@ h1 {
   -webkit-animation: armsAnimation 1s alternate 1s infinite;
 }
 
-.item2 {
-  margin: 1rem;
+.zimbabwe {
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+  align-content: center;
 }
 
+h3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
 
 @-webkit-keyframes armsAnimation {
   50% {
