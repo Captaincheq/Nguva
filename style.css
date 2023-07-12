@@ -34,8 +34,7 @@ h1, h3 {
   display: grid;
   grid-template-areas:
     "Area1 "
-    "Area2 "
-    "Area3 ";
+    "Area2 ";
 }
 
 .grid-container>div {
@@ -134,11 +133,16 @@ h1, h3 {
   -webkit-animation: armsAnimation 1s alternate 1s infinite;
 }
 
+.clocks{
+  display: flex;
+  flex-direction: row;
+}
+
 .zimbabwe {
   display: flex;
   flex-direction: row;
   text-align:center;
-
+  padding: 0 20px ;
 }
 
 .zimbabwe iframe {
