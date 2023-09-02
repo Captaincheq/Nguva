@@ -24,9 +24,10 @@ function updateTime() {
   clock.time =
     zeroPadding(cd.getHours(), 2) +
     ":" +
-    zeroPadding(cd.getMinutes(), 2) +
-    ":" +
-    zeroPadding(cd.getSeconds(), 2) 
+    zeroPadding(cd.getMinutes(), 2)
+    // +
+    //":" +
+    //zeroPadding(cd.getSeconds(), 2) 
     //+
     //":" +
     //zeroPadding(cd.getMilliseconds(), 3)
